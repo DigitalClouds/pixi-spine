@@ -31,7 +31,8 @@
     "check:browserify": "yarn checkpack browserify -e test/checkpack.ts",
     "check:webpack": "yarn checkpack webpack -e test/checkpack.ts",
     "check:vanillajs": "yarn checkpack vanillajs -e test/checkpack.ts",
-    "check:all": "yarn build && yarn check:browserify && yarn check:webpack && yarn check:vanillajs"
+    "check:all": "yarn build && yarn check:browserify && yarn check:webpack && yarn check:vanillajs",
+    "prepare": "npm run build"
   },
   "files": [
     "bin/",
@@ -51,9 +52,9 @@
     "tmp": "^0.0.33",
     "ts-helpers": "~1.1.2",
     "typedoc": "^0.9.0",
-    "typescript": "^2.8.3"
+    "typescript": "^3.4.5"
   },
   "dependencies": {
-    "pixi.js": "5.0.2"
+    "pixi.js": "^5.1.3"
   }
 }
